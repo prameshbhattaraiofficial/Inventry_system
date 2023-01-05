@@ -1,0 +1,34 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @helper Mylisthelper(string[] str) { 
+    <ul>
+        @foreach (var item in str)
+    {
+        <li>
+            @item
+        </li>
+    }
+        </ul>
+
+    }
+
+    </div>
+
+    <div>
+        <label> Example -1 Name List</label>
+
+        <div>
+            @Mylisthelper(new string[] {"tom", "ram","shyam","hari","gita ", "sita"}) 
+        </div>
+    </div>
+</body>
+</html>
